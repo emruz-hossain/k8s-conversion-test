@@ -1,0 +1,24 @@
+package: github.com/emruz-hossain/k8s-conversion-test
+import:
+- package: github.com/appscode/go
+  subpackages:
+  - log
+  - types
+- package: k8s.io/api/apps/v1
+- package: k8s.io/api
+  subpackages:
+  - apps/v1beta1
+  - core/v1
+  - extensions/v1beta1
+- package: k8s.io/apimachinery
+  subpackages:
+  - pkg/apis/meta/v1
+- package: k8s.io/kubernetes
+  version: ^1.11.0-alpha.0
+  subpackages:
+  - pkg/api/legacyscheme
+  - pkg/apis/apps
+  - pkg/apis/apps/install
+  - pkg/apis/batch/install
+  - pkg/apis/core/install
+  - pkg/apis/extensions/install
